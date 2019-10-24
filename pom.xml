@@ -7,6 +7,11 @@
     <groupId>dev.dmitriishcherbakov.ott</groupId>
     <artifactId>ottcheckerspring</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <name>Ott Checker</name>
+
+    <description>The web application for visualisation of chunk rotation and OTT protocols errors - HTTP Live Streaming (HLS), Dynamic Adaptive Streaming over HTTP (MPEG-DASH) and Smooth Streaming (SS).</description>
+
     <build>
         <plugins>
             <plugin>
@@ -26,6 +31,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.2.0.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
