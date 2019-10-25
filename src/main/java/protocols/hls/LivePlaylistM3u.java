@@ -216,8 +216,11 @@ public class LivePlaylistM3u implements protocols.BasicStreamOtt{
     }
 
     @Override
-    public String toString(){
-        return "Медиапоток: " + this.name + " : " + this.url;
+    public String toString() {
+        return "LivePlaylistM3u{" +
+                "name='" + name + '\'' +
+                ", url='" + url + '\'' +
+                '}';
     }
 }
 

@@ -174,8 +174,10 @@ public class LivePlaylistMpd implements protocols.BasicStreamOtt{
     }
 
     @Override
-    public String toString(){
-        return "Медиапоток: " + this.name + " : " + this.url;
+    public String toString() {
+        return "LivePlaylistMpd{" +
+                "name='" + name + '\'' +
+                ", url='" + url + '\'' +
+                '}';
     }
-
 }
