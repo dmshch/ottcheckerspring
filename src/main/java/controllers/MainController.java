@@ -1,11 +1,6 @@
 package controllers;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.util.Date;
-import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +14,7 @@ public class MainController {
         private static final String template = "OTT stream is: %s!";
 
         @RequestMapping("/checking")
-        public BasicStreamOtt checking(@RequestParam(value="url", defaultValue="null") String url) {
+        public BasicStreamOtt checking(@RequestParam(value="url", defaultValue="http://video.beeline.tv/live/h/channel40017.isml/index-ios_mobile.m3u8") String url) {
 
             BasicStreamOtt stream = null;
             // Необходимо будет проверить ссылку и вызвать соответствующий конструктор для текущего протокола
