@@ -1,2 +1,20 @@
 # Default ignored files
 /workspace.xml
+
+.idea/*
+
+.out/*
+
+*.class
+
+*.jar
+
+*.iml
+
+*.MF
+
+*.txt
+
+TestClassM3u.java
+
+TestClassMpd.java

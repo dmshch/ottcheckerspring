@@ -14,7 +14,7 @@ public class MainController {
         private static final String template = "OTT stream is: %s!";
 
         @RequestMapping("/checking")
-        public BasicStreamOtt checking(@RequestParam(value="url", defaultValue="http://video.beeline.tv/live/h/channel40017.isml/index-ios_mobile.m3u8") String url) {
+        public BasicStreamOtt checking(@RequestParam(value="url", defaultValue="") String url) {
 
             BasicStreamOtt stream = null;
             // Необходимо будет проверить ссылку и вызвать соответствующий конструктор для текущего протокола
