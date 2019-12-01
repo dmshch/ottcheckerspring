@@ -1,6 +1,6 @@
-package protocols.mpegdash;
+package app.protocols.mpegdash;
 
-import protocols.BasicStreamOtt;
+import app.BasicStreamOtt;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
@@ -16,7 +16,7 @@ import java.util.HashMap;
  * Created by dmitryshcherbakov
  */
 
-public class LivePlaylistMpd implements protocols.BasicStreamOtt{
+public class LivePlaylistMpd implements app.BasicStreamOtt{
 
     private String name;
     private String url;

@@ -11,7 +11,7 @@
 
     <name>Ott Checker</name>
 
-    <description>The web application for visualisation of chunk rotation and OTT protocols errors - HTTP Live Streaming (HLS), Dynamic Adaptive Streaming over HTTP (MPEG-DASH) and Smooth Streaming (SS).</description>
+    <description>The web application for visualisation of chunk rotation and OTT app.protocols errors - HTTP Live Streaming (HLS), Dynamic Adaptive Streaming over HTTP (MPEG-DASH) and Smooth Streaming (SS).</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

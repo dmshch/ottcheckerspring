@@ -1,8 +1,8 @@
-package protocols.ss;
+package app.protocols.ss;
 
 import java.util.HashMap;
 
-public class LivePlaylistSs implements protocols.BasicStreamOtt {
+public class LivePlaylistSs implements app.BasicStreamOtt {
 
     private String name;
     private String url;

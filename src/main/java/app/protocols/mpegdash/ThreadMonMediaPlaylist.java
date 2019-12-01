@@ -1,4 +1,4 @@
-package protocols.mpegdash;
+package app.protocols.mpegdash;
 
 /**
  * Created by dmitryshcherbakov

@@ -1,4 +1,4 @@
-package protocols.hls;
+package app.protocols.hls;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
  * Эта версия предназначена для Live Media Playlists
  */
 
-public class LivePlaylistM3u implements protocols.BasicStreamOtt{
+public class LivePlaylistM3u implements app.BasicStreamOtt{
 
     private String name;
     public String getName() {

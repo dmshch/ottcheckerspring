@@ -1,6 +1,6 @@
-package protocols.hls;
+package app.protocols.hls;
 
-import protocols.BasicStreamOtt;
+import app.BasicStreamOtt;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;

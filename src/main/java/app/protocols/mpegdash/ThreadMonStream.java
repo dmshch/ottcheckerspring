@@ -1,23 +1,24 @@
-package protocols.hls;
+package app.protocols.mpegdash;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
  * Created by dmitryshcherbakov
- * тут создаем треды на каждый медиаплейлист в потоке
  */
-public class ThreadMonStream implements Runnable{
 
-    Thread t;
-    private LivePlaylistM3u stream;
+public class ThreadMonStream implements Runnable {
 
-    public ThreadMonStream(LivePlaylistM3u stream){
+    private Thread t;
+    private LivePlaylistMpd stream;
+
+    public ThreadMonStream(LivePlaylistMpd stream){
         this.stream = stream;
         t = new Thread(this, stream.getName());
         t.start();
     }
 
+    @Override
     public void run() {
         ArrayList<ThreadMonMediaPlaylist> thread = new ArrayList();
         String key;
@@ -29,6 +30,7 @@ public class ThreadMonStream implements Runnable{
                 key = newentry.getKey();
                 ThreadMonMediaPlaylist tr = new ThreadMonMediaPlaylist(stream, key);
                 thread.add(tr);
+                System.out.println(key);
             }
             for (ThreadMonMediaPlaylist t: thread) {
                 try {
@@ -37,7 +39,7 @@ public class ThreadMonStream implements Runnable{
                     e.printStackTrace();
                 }
             }
-            thread = new ArrayList();
         }
+
     }
 }
