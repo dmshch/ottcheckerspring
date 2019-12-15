@@ -1,9 +1,13 @@
 # Default ignored files
 /workspace.xml
 
-.idea/*
+/idea/
 
-.out/*
+/target/
+
+/src/test/
+
+/out/
 
 *.class
 
@@ -15,6 +19,7 @@
 
 *.txt
 
+TestClassMpd.java
+
 TestClassM3u.java
 
-TestClassMpd.java
